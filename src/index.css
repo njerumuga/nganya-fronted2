@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================
+   THEME VARIABLES (FUTURE-PROOF)
+   ================================ */
+:root {
+    --bg: #121212;
+    --card: #1a1a1a;
+    --border: #2a2a2a;
+    --text: #e5e5e5;
+    --muted: #9ca3af;
+}
+
+[data-theme="light"] {
+    --bg: #f9fafb;
+    --card: #ffffff;
+    --border: #e5e7eb;
+    --text: #111827;
+    --muted: #6b7280;
+}
+
+/* ✅ IMPORTANT: global baseline so layout is not boxed/centered */
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+}
